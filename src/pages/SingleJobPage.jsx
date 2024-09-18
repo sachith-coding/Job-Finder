@@ -33,7 +33,7 @@ const SingleJobPage = () => {
     loading ? <Spinner /> : (
       <>
         <section>
-          <div class="container m-auto py-6 px-6">
+          <div className="container m-auto py-6 px-6">
             <Link
               to="/jobs"
               className="text-indigo-500 hover:text-indigo-600 flex items-center"
