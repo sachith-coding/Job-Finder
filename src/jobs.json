@@ -83,20 +83,6 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
-    },
-    {
-      "id": "b5ff",
-      "type": "Full-Time",
-      "title": "New Job 01",
-      "description": "This is New Job",
-      "location": "Colombo",
-      "salary": "Under $50K",
-      "company": {
-        "name": "GTN",
-        "description": "Global Trading Network",
-        "contactEmail": "gtn@gtngroupcom",
-        "contactPhone": "22443355"
-      }
     }
   ]
 }
