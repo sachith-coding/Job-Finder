@@ -10,8 +10,17 @@ import AddJobPage from './pages/AddJobPage'
 
 const App = () => {
 
-  const newJobFunc = (newJob) => {
-    console.log("This is submitted Job : \n", newJob)
+  const newJobFunc = async (newJob) => {
+    const res = await fetch('/api/jobs', {
+      method : 'POST',
+      headers : {
+        'Content-Type' : 'application/json'
+      },
+      body : JSON.stringify(newJob)
+    })
+    return;
+
+
   }
   
   const pageRouter = createBrowserRouter(
