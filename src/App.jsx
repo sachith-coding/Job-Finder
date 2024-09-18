@@ -5,7 +5,7 @@ import MainLayout from './layouts/MainLayout'
 import HomePage from './pages/HomePage'
 import JobsPage from './pages/JobsPage'
 import NotFoundPage from './pages/NotFoundPage'
-import SingleJobPage from './pages/SingleJobPage'
+import SingleJobPage, { jobLoader } from './pages/SingleJobPage'
 import AddJobPage from './pages/AddJobPage'
 
 const App = () => {
@@ -35,7 +35,7 @@ const App = () => {
       <Route path='/' element={<MainLayout />}>
         <Route index element={<HomePage />} />
         <Route path='/jobs' element={<JobsPage />} />
-        <Route path='/jobs/:id' element={<SingleJobPage deleteJob={deleteJob} />} />
+        <Route path='/jobs/:id' element={<SingleJobPage deleteJob={deleteJob} />} loader={jobLoader} />
         <Route path='/add-job' element={<AddJobPage submitNewJob={newJobFunc} />} />
         <Route path='*' element={<NotFoundPage />} />
       </Route>
